@@ -187,6 +187,29 @@ VALUES
     ("Joseph Gordon-Levitt"),
     ("Anne Hathaway");
 
+    INSERT INTO roles (
+        role_name,
+        actor_id,
+        movie_id
+    )
+
+    VALUES
+        ("Bruce Wayne", 1, 1),
+        ("Alfred", 2, 1),
+        ("Ra's Al Ghul", 3,1),
+        ("Rachel Dawes", 4, 1),
+        ("Commissioner Gordon", 5, 1),
+        ("Bruce Wayne", 1, 2),
+        ("Joker", 6, 2),
+        ("Harvey Dent", 7, 2),
+        ("Alfred", 2, 2),
+        ("Rachel Dawes", 8, 2),
+        ("Bruce Wayne", 1, 3),
+        ("Commissioner Gordon", 5, 3),
+        ("Bane", 9, 3),
+        ("John Blake", 10, 3),
+        ("Selina Kyle", 11, 3);
+
 -- Prints a header for the movies output
 .print "Movies"
 .print "======"
