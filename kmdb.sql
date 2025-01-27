@@ -218,6 +218,18 @@ VALUES
 -- The SQL statement for the movies output
 -- TODO!
 
+SELECT 
+    movies.title,
+    movies.year_released,
+    movies.mpaa_rating,
+    studios.studio_name
+FROM 
+    movies
+INNER JOIN 
+    studios
+ON 
+    movies.studio_ID = studios.id;
+
 -- Prints a header for the cast output
 .print ""
 .print "Top Cast"
@@ -227,3 +239,18 @@ VALUES
 
 -- The SQL statement for the cast output
 -- TODO!
+
+SELECT 
+    movies.title,
+    actors.actor_name,
+    roles.role_name
+FROM 
+    roles
+INNER JOIN 
+    movies
+ON 
+    roles.movie_id = movies.id
+INNER JOIN 
+    actors
+ON 
+    roles.actor_id = actors.id;
